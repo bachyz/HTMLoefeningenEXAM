@@ -1,0 +1,45 @@
+<html>
+    <head>
+        <title>Javascript : VOORBEELD 12, persoonljike themas</title>
+        <script>
+            function themainstellen(naam, kleur)
+            {
+                var waarden = document.getElementsByTagName(naam);
+                for (var element = 0; element < waarden.length; ++naam)
+                {
+                    waarden[element].style.color = "#" + kleur;
+
+                }
+            }
+        </script>
+    </head>
+    <body>
+        <h2>Een persoonlijkthema instellen</h2>
+        <form name="kleurtjes">
+            <p>
+            Pagina: <input type="text" id="achtergrond" name="achtergrond" value="achtergrond"/>
+            Kop 1: <input type="text" id="kop1" name="kop1" value="kop1"/>
+            Kop 2: <input type="text" id="kop2" name="kop2" value="kop2"/>
+
+
+            </p>
+
+            <p>
+                Letterkleur Pagina: <input type="text" id="ltachtergrond" name="ltachtergrond" value="ltachtergrond"/>
+                Letterkleur Kop1: <input type="text" id="ltkop1" name="ltkop1" value="ltkop1"/>
+                Letterkleur Kop2: <input type="text" id="ltkop2" name="ltkop2" value="ltkop2"/>
+
+
+
+            </p>
+
+            <p>
+                <input type="button" name="kleurinstellen" value="Stel de kleur in" onclick="themainstellen()"/>
+            </p>
+        </form>
+        <h1>Voorbeeldweergave van een kop net niveau 1</h1>
+        Dit is een stukje tekst dat de voorgrondkleur demonstreerd; met andere woorden,  de letterkleur van de doorlopende tekst.
+        <h2>Voorbeeld weergave van een kop met nivau2</h2>
+        Ook hier krijgt de doorlopende tekst  terug de voorgrondkleur van de gewone tekst.
+    </body>
+</html>

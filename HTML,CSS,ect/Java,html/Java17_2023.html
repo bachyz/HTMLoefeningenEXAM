@@ -1,0 +1,25 @@
+<html>
+    <head>
+        <title>Javascript - 17 : dubbel of enkel ?</title>
+        <script>
+            function dubbel() 
+            {
+                document.getElementById("dubbelantwoord").innerHTML = "Je hebt dubbel geKlikt."
+            }
+
+            function enkel() 
+            {
+                document.getElementById("enkelantwoord").innerHTML = "Je hebt maar 1 keer geKlikt."
+            }
+            
+        </script>
+    </head>
+    <body>
+        <h1>Klik je enkel of dubbel op de alinea ?</h1>
+        <p ondblclick="dubbel();">Dubbelklik op deze alinea...</p>
+        <p onclick="enkel();">Klik slechts 1 keer op deze alinea...</p>
+
+        <p id="dubbelantwoord"></p>
+        <p id="enkelantwoord"></p>
+    </body>
+</html>

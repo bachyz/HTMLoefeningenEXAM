@@ -1,0 +1,44 @@
+<html>
+    <head>
+        <title>Javascript - Voorbeeld 18: werken met een keuzelijst</title>
+
+        <script>
+            function haalKeuzeOp()
+            {
+                var auto = document.getElementById("favauto").value;
+                document.getElementById("GekozenWaarde").innerHTML = auto;
+
+                var brandstof = document.getElementById("brandstof");
+                document.getElementById("GekozenBrandstof").innerHTML = brandstof.options[brandstof.selectedIndex].text;
+            }
+        </script>
+    </head>
+
+    <body>
+        <h1>Werken met de opties uit een keuzelijst</h1>
+        <form>
+            Selecteer jouw favoriete wagen:
+            <select id="favauto">
+                <option>Audi</option>
+                <option>BMW</option>
+                <option>Mercedes</option>
+                <option>Volvo</option>
+            </select>
+            Selecteer jouw brandstoftype:
+            <select id="brandstof">
+                <option>Elektrisch</option>
+                <option>Benzine</option>
+                <option>Diesel</option>
+                <option>Hybride</option>
+                <option>Waterstof</option>
+                <option>LPG</option>
+            </select>
+
+            <br/>
+            <br/>
+            <input type="button" onclick="haalKeuzeOp();" value="Klik op mij">
+        </form>
+        <p id="GekozenWaarde"></p>
+        <p id="GekozenBrandstof"></p>
+    </body>
+</html>

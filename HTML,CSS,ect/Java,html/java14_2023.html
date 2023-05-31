@@ -1,0 +1,20 @@
+<html>
+    <head>
+    <title>Javascript - VOORBEELD 14, Schermeigenschappen opvragen</title>
+    </head>
+    <body>
+        <p id="beedte"></p>
+        <p id="hoogte"></p>
+        <p id="kleurdiepte"></p>
+        <p id="pixeldiepte"></p>
+        
+    </body>
+    <script>
+        document.getElementById("kleurdiepte").innerHTML = "kleurdiepete: " + screen.colorDepth;
+        document.getElementById("beedte").innerHTML = "beedte: " + screen.width + " / " + screen.availWidth;
+        document.getElementById("hoogte").innerHTML = "hoogte: " + screen.height + " / " + screen.availHeight;
+        document.getElementById("pixeldiepte").innerHTML = "pixeldiepte: " + screen.pixelDepth;
+
+
+    </script>
+</html>

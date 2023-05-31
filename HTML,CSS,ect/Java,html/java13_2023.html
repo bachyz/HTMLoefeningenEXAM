@@ -1,0 +1,18 @@
+<html>
+    <head>
+        <title>Javascript - Voorbeeld 13, elementen tellen</title>
+
+    </head>
+    <body>
+        <h1>H1 elementen tellen aan de han van een JS</h1>
+        <p>
+            <a href="https://www.google.com">GOOGLE</a>
+            <a href="https://www.bing.com">BING</a>
+            <a href="https://www.yahoo.com">YAHOO</a>
+        </p>
+        <p id="tellen"></p>
+        <script>
+            document.getElementById("tellen").innerHTML = "Aantal links op deze pagina: " + document.getElementsByTagName("p").length;
+        </script>
+    </body>
+</html>

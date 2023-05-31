@@ -1,0 +1,65 @@
+.div-1 {
+    background-color: blue;
+    height: 50px;
+    width: 75px;
+    /*padding: 5px 15px 25px 50px; -> De rand tussen de container en de tekst vastleggen, */ 
+/*volgorde: boven links rechts oner*/
+
+    float: right;
+
+}
+.div-2{
+    background-color: red;
+    height: 100px;
+    width: 100px;
+    float: right;
+    border-radius: 15%;
+    padding: 5px;
+
+}
+
+.div-3{
+    background-color: yellow;
+    height: 200px;
+    width: 200px;
+    float: left;
+    border-radius: 50%;
+    text-align: center;
+}
+
+.div-4{
+    border-left: 200px solid yellow;
+    border-right: 200px solid blue;
+    border-bottom: 200px solid red;
+    border-top: 200px solid green;
+    display: inline-block; 
+}
+.div-5{
+    width: 100px;
+    height: 100px;
+    background-color: pink;
+    clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+}
+
+.div-6{
+    background-color: purple;
+    width: 400px;
+    height: 200px;
+    position: relative;
+}
+
+.div-7{
+    background-color: green;
+    width: 400px;
+    height: 200px;
+    top: 180px;
+    right: 30px;
+    position: absolute;
+}
+
+.div-8{
+    top: 0px;
+    background-color: cyan;
+    border: 2px solid peachpuff;
+    position: sticky;
+}

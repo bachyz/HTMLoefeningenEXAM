@@ -1,0 +1,41 @@
+/* css-bestand*/
+
+/* elementen */
+
+body {
+    color: #3b3a36;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+}
+
+a {
+    text-decoration: none;
+    color: crimson;
+}
+
+div h2 {
+    color: #23aa49;
+}
+
+table {
+    border: palegoldenrod;
+    border-width: 2px;
+    border-style: solid;
+    width: 40%;
+}
+
+/* id's*/
+#citaat1 {
+    font-family: 'Brush Script MT';
+}
+#waarschuwing.oranje {
+    background-color: orange;
+}
+#waarschuwing.rood {
+    background-color: red;
+}
+
+/* CLASSES */
+.groen {
+    color: green;
+}

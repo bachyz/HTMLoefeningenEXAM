@@ -1,0 +1,22 @@
+<html>
+    <head>
+        <title>Javascript - 15: Spelen met links</title>
+        <script>
+            function page_redirect ()
+            {
+                window.location = "http://www.google.com";
+            }
+            setTimeout("page_redirect()", 200)
+        </script>
+    </head>
+    <body>
+        <h1>Spelen met links</h1>
+        <p>Kweek geduld en wacht een paar seconden. Kijk wat er gaat gebeuren ...
+            <br>
+            heb je geen geduld klik dan maar al op het knopje.
+        </p>
+        <form>
+            <input type="button" value="doorstuuren" onclick="page_redirect();"/>
+        </form>
+    </body>
+</html>

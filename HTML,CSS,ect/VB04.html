@@ -1,0 +1,92 @@
+<html>
+
+<head>
+    <link href="stijlformVB04.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+    <div class="form">
+        <div class="title">Welcome</div>
+        <div class="subtitle">Let's create your account!</div>
+        <div class="input-container ic1">
+            <input id="firstname" class="input" type="text" placeholder=" " />
+            <div class="cut"></div>
+            <label for="firstname" class="placeholder">First name</label>
+        </div>
+        <div class="input-container ic2">
+            <input id="lastname" class="input" type="text" placeholder=" " />
+            <div class="cut"></div>
+            <label for="lastname" class="placeholder">Last name</label>
+        </div>
+        <div class="input-container ic2">
+            <input id="email" class="input" type="text" placeholder=" " />
+            <div class="cut cut-short"></div>
+            <label for="email" class="placeholder">Email</label>/>
+        </div>
+
+        <div class="input-container ic2">
+            <input type="color" id="favcolor" class="input" placeholder=" " />
+            <div class="cut"></div>
+            <label for="favcolor" class="placeholder">Color</label>
+        </div>
+        <div class="input-container ic2">
+            <input type="date" id="birthday" name="birthday" class="input" placeholder=" " />
+            <div class="cut"></div>
+            <label for="birthday" class="placeholder">Birthday</label>
+        </div>
+        <div class="input-container ic2">
+            <input type="number" id="quantity" name="quantity" min="1" max="11" class="input" placeholder=" "
+                step="2" />
+            <div class="cut"></div>
+            <label for="quantity" class="placeholder">Quantity</label>
+        </div>
+        <div class="input-container ic2">
+            <input type="range" id="vol" name="vol" min="0" max="50" class="input" placeholder=" " />
+            <div class="cut"></div>
+            <label for="vol" class="placeholder">Volume</label>
+        </div>
+        <div class="input-container ic2">
+            <input id="gemeente" class="input" type="text" placeholder=" " />
+            <div class="cut"></div>
+            <label for="gemeente" class="placeholder">Kies een gemeente:</label>
+            <select id="gemeente" name="gemeente">
+                <option value="">-- Selecteer een gemeente --</option>
+                <optgroup label="Antwerpen">
+                    <option value="antwerpen">Antwerpen</option>
+                    <option value="mechelen">Mechelen</option>
+                    <option value="turnhout">Turnhout</option>
+                </optgroup>
+                <optgroup label="Limburg">
+                    <option value="hasselt">Hasselt</option>
+                    <option value="genk">Genk</option>
+                    <option value="tongeren">Tongeren</option>
+                </optgroup>
+                <optgroup label="Oost-Vlaanderen">
+                    <option value="gent">Gent</option>
+                    <option value="aalst">Aalst</option>
+                    <option value="sint-niklaas">Sint-Niklaas</option>
+                </optgroup>
+                <optgroup label="Vlaams-Brabant">
+                    <option value="leuven">Leuven</option>
+                    <option value="vilvoorde">Vilvoorde</option>
+                    <option value="ternat">Ternat</option>
+                </optgroup>
+                <optgroup label="West-Vlaanderen">
+                    <option value="brugge">Brugge</option>
+                    <option value="kortrijk">Kortrijk</option>
+                    <option value="oostende">Oostende</option>
+                </optgroup>
+            </select>
+
+        </div>
+
+
+
+
+
+
+        <button type="text" class="submit">submit</button>
+    </div>
+</body>
+
+</html

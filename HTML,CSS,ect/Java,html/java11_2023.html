@@ -1,0 +1,28 @@
+<html>
+    <head>
+        <title>Javascript op restaurant in Italie - Voorbeeld 11</title>
+        <link rel="stylesheet" type="text/css" href="restaurantJava11.css">
+        <script type="text/javascript" src="externalJava11_2023.js"></script>
+    </head>
+    <body>
+        <h1>Restaurant Little Italy</h1>
+        <br>
+        <form name="bestelForm">
+            <p>
+            <input type="radio" name="gerecht" id="eten1" value="pizza" checked />pizza
+            <input type="radio" name="gerecht" id="eten2" value="pasta" checked />pasta
+            <input type="radio" name="gerecht" id="eten3" value="calzone" checked />calzone
+            </p>
+            <p>
+                Extra garnituur? <br/>
+                <input type="checkbox" name="garnituur" id="vlees" checked />vlees
+                <input type="checkbox" name="garnituur" id="vis" checked />vis
+                <input type="checkbox" name="garnituur" id="kaas" checked />kaas
+
+            </p>
+            <p>
+                <input type="button" name="bestel" value="bestel" onclick="bestellen();" />
+            </p>
+        </form>
+    </body>
+</html>

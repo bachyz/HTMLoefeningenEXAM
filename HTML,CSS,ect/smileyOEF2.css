@@ -1,0 +1,39 @@
+.divHoofd{
+    background-color: yellow;
+    height: 400px;
+    width: 400px;
+    float: left;
+    border-radius: 50%;
+    text-align: center;
+}
+
+.divLoog{
+    background-color: black;
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    position: absolute;
+    left: 100px;
+    top: 100px;
+    
+}
+.divRoog{
+    background-color: black;
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    position: absolute;
+    left: 260px;
+    top: 100px;
+    
+}
+.div-Mond{
+    background-color: red;
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    position: absolute;
+    left: 180px;
+    top: 300px;
+    
+}

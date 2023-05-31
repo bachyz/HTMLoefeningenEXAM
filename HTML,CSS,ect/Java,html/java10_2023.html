@@ -1,0 +1,23 @@
+<html>
+    <head>
+        <title>Javascript - Voorbeeld 10 (werken met objecten)</title>
+        
+    </head>
+    <body id="kleur">
+        <p id="weergeven"></p>
+        <script>
+            function persoon(voornaam, naam, leeftijd, oogkleur)
+            {
+                this.voornaam = voornaam;
+                this.naam = naam;
+                this.leeftijd = leeftijd;
+                this.oogkleur = oogkleur;
+            }
+
+            var vader = new persoon("Jhon", "De Scammer", 50, "LemonChiffon");
+            document.getElementById("weergeven").innerHTML = vader.voornaam + " " + vader.naam + " is " + vader.leeftijd + " jaar jong ...";
+            document.getElementById("kleur").style.backgroundColor = vader.oogkleur;
+        </script>
+        
+    </body>
+</html>

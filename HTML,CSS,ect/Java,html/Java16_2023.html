@@ -1,0 +1,23 @@
+<html>
+    <head>
+        <title>Javascript - voorbeeld 16: We passen nog eens een stijl aan</title>
+        <script>
+            function knopOK() 
+            {
+                document.getElementById("ok").style.color = "green";
+
+            }
+
+            function knopAnnuleren() 
+            {
+                document.getElementById("annuleren").style.background = "red";
+                
+            }
+        </script>
+    </head>
+    <body>
+        <h1>Mijn grote nieuws kop : pas de knop aan in plaats van de kop</h1>
+        <button id="ok" type="button" onclick="knopOK();">OK</button>
+        <button id="annuleren" type="button" onclick="knopAnnuleren();">Annuleren</button>
+    </body>
+</html>

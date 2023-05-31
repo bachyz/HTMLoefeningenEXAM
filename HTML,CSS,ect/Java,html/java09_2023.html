@@ -1,0 +1,43 @@
+<html>
+    <head>
+        <title>Werken met JS cookies - VB 9</title>
+        <script>
+            function zetKoekje(Naam, Waarde, VervalDagen)
+            {
+                datum = new Date();
+                datum.setTime(datum.getTime() + (VervalDagen*24*60*1000));
+                const VervalDatum = "vervalDatum= " + datum.toUTCString();
+                document.cookie = Naam + " = " + Waarde + ";" + VervalDatum;
+                alert(document.cookie);
+                alert(VervalDagen + "" + VervalDatum);
+                alert(Naam + "=" + Waarde);
+            }
+
+            function haalKoekje(Naam)
+            {
+                var cookieArr = document.cookie.split(";");
+                for(var aantal=0 ; aantal < cookieArr.length; aantal ++)
+                {
+                    var cookieWaarde = cookieArr[aantal].split(";");
+                    if(Naam == cookieWaarde[0].trim)
+                    {
+                        alert(decodeURIComponent(cookieWaarde[1]));
+                    }
+
+                }
+                alert("cookie is leeg")
+            }
+        </script>
+    </head>
+    <body>
+        <h2>Werken met cookies</h2>
+        <p>Cookies zijn gegevens, opgeslagen in kleine tekstbestanden, op jouw coputer.
+            Wanneer een webserver een webpagina naar een browser heeft gestuurd, wordt de verbinding verbroken
+            , en vergeet de server alles over de gebruiker. Maar . . . cookies zijn uitgevonden om dit probleem op te lossen. In een cookie worden de gegevens van een gebruiker lokaal bewaard
+            om opnieuw te misgebruiken.
+        </p>
+        <button type="button" onclick="zetKoekje('naam', 'Fred', 30);" value="Koekje zetten">Koekje zetten</button>
+
+        <button type="button" onclick="haalKoekje('naam');" value="Koekje halen">koekje halen</button>
+    </body>
+</html>
