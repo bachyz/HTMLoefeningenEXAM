@@ -1,0 +1,17 @@
+.blackimg{
+    border: 5px dotted black;
+    border-radius: 10%;
+}
+
+.yellowimg{
+    border: 25px solid yellow;
+    border-radius: 50%;
+}
+
+.redimg{
+    border: 15px double red;
+}
+
+img:hover{
+    border: 10px solid blue;
+}

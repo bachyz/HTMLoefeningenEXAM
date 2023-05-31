@@ -1,0 +1,15 @@
+.AlgLettertype{
+    font-family: Cambria, serif;
+    background-color: antiquewhite;
+    padding-left: 1em;
+}
+
+h1{
+    font-size: 72px;
+    text-decoration: underline double darkgreen; color: black;
+}
+
+.h2Article{
+    letter-spacing: 0.3em;
+    text-transform: uppercase;
+}

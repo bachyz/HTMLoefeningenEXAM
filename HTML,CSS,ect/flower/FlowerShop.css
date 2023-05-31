@@ -1,0 +1,24 @@
+.tabel-style{
+    width: 780px;
+    padding: 0;
+}
+.menu{
+    background-color: #fede00;
+}
+
+body{
+    size: 10;
+    font-family: Verdana;
+}
+h1{
+    color: green;
+    size: 20px;
+    font-family: Verdana;
+    font-weight: bold;
+}
+
+
+
+a{
+    color: black;
+}

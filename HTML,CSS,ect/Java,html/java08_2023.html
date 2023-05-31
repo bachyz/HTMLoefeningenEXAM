@@ -1,0 +1,29 @@
+<html>
+    <head>
+        <title>Javascript - voorbeeld 8</title>
+        <script>
+            function kleur()
+        {
+            document.getElementById('titel').style.color='red'
+        }
+
+
+        function muisOver(Obj)
+        {
+            Obj.innerHTML = "Jij durft meschien wel. . .";
+        }
+
+        function muisuit(Obj)
+        {
+            Obj.innerHTML = "Mongool wrm druk je ni";
+        }
+        </script>
+
+        
+    </head>
+    <body>
+        <h1 id="titel">Mijn grote nieuws kop</h1>
+        
+        <button type="button" onclick="kleur()" onmouseover="muisOver(this)" onmouseout="muisuit(this)">Durf je vel te drukken</button>
+    </body>
+</html>

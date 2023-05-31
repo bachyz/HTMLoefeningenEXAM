@@ -1,0 +1,36 @@
+<html>
+    <head>
+        <title>Javascript - Voorbeeld 17: dubbel of enkel?</title>
+
+        <script>
+            function dubbel()
+            {
+                var element = document.getElementById("antwoord")
+                element.innerHTML = "Je hebt dubbel geklikt";
+
+                element.style.font = ""
+                element.style.fontSize = ""
+                element.style.color = "pink";
+                element.style.backgroundColor = "grey"
+            }
+
+            function enkel()
+            {
+                var element = document.getElementById("antwoord")
+                element.innerHTML = "Je hebt enkel geklikt";
+
+                element.style.color = "";
+                element.style.backgroundColor = ""
+                element.style.font = "Roboto"
+                element.style.fontSize = "200px"
+            }
+        </script>
+    </head>
+    <body>
+        <h1>Klik je enkel of dubbel op de alinea?</h1>
+        <p ondblclick="dubbel()">Dubbelklik op deze alinea...</p>
+        <p onclick="enkel()">Klik slechts 1 keer op deze alinea...</p>
+
+        <p id="antwoord"></p>
+    </body>
+</html>
